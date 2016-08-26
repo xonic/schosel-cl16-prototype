@@ -66,6 +66,7 @@
   padding: 0 $space40;
   border-top: 1px solid $gray70;
   line-height: $touch-size;
+  white-space: nowrap;
   cursor: pointer;
 
   .nav--secondary__item:first-child & {
