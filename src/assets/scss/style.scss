@@ -6,8 +6,11 @@ The main SCSS file for everything, yep
 @import "base";
 @import "layout";
 
+@import "modules/atoms/btn";
+
 @import "modules/molecules/logo";
 @import "modules/molecules/nav";
-@import "modules/organisms/header";
 
+@import "modules/organisms/page";
+@import "modules/organisms/header";
 @import "modules/organisms/match";

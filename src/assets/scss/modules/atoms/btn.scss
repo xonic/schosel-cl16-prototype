@@ -1,0 +1,24 @@
+.btn--save {
+  display: block;
+  width:100%;
+  height: $touch-size;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left:0;
+  background: $primary-color;
+  border: none;
+  font-family: $base-font-family;
+  font-size: $font40;
+  font-weight: $bold-font-weight;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  cursor: pointer;
+  transition: bottom .2s ease-in-out;
+
+  .bets-changed & {
+    bottom: 53px;
+    transition: bottom .2s ease-out;
+  }
+}

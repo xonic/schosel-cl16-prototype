@@ -1,5 +1,5 @@
 .match {
-  padding: $space40 0;
+  padding: $space40 0 0;
   border-top: 1px solid $gray60;
 
   &:first-of-type {
@@ -25,6 +25,7 @@
 .match__title {
   display:flex;
   justify-content: space-around;
+  margin-bottom: $space40;
   text-align: center;
 }
 
@@ -56,4 +57,120 @@
 
 .match__result {
   font-size: $font40;
+}
+
+.match__bet {
+  display: flex;
+  margin-bottom: $space30;
+  border: 1px solid $gray70;
+  line-height: 1.2;
+  text-align: center;
+
+  .match__label {
+    display: block;
+    padding: $space30 0;
+    flex: 1;
+    border-bottom: 2px solid $gray70;
+    border-left: 1px solid $gray70;
+
+    &:first-of-type {
+      border-left: none;
+    }
+  }
+
+  .match__label--10 {
+    border-bottom-color: $green;
+  }
+
+  .match__label--20 {
+    border-bottom-color: $green-light;
+  }
+
+  .match__label--30 {
+    border-bottom-color: $yellow;
+  }
+
+  .match__label--40 {
+    border-bottom-color: $orange;
+  }
+
+  .match__label--50 {
+    border-bottom-color: $red;
+  }
+
+  .match__radio:checked + .match__label {
+    background: $gray70;
+    font-weight: $bold-font-weight;
+  }
+
+  .match__radio:disabled + .match__label {
+    border-bottom: none;
+    color: $gray40;
+    cursor: default;
+  }
+}
+
+.match__radio,
+.match__checkbox {
+  display: none;
+}
+
+.match__label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.match__superbet {
+  margin-bottom: $space30;
+  text-align: center;
+
+  .match__label {
+    position: relative;
+    padding-left: $space40 + $space20;
+    line-height: $touch-size;
+
+    &:before {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin-top: -$space30;
+      width: 20px;
+      height: 20px;
+      border: 1px solid $gray60;
+    }
+  }
+
+  .match__checkbox:checked + .match__label {
+    &:after {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 4px;
+      margin-top: -8px;
+      width:14px;
+      height: 14px;
+      background: $primary-color;
+    }
+  }
+
+  .match__checkbox:disabled + .match__label {
+    color: $gray40;
+    cursor: default;
+
+    &:before {
+      border-color: $gray70;
+    }
+
+    &:after {
+      background: $gray60;
+    }
+  }
+}
+
+.match__superbets-left {
+  font-size: $font30;
+  color: $gray40;
 }

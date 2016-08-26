@@ -1,0 +1,12 @@
+.page {
+  margin: 0 auto;
+  padding: 90 + $space40 $space30 53 + $space40;
+  max-width: 600px;
+
+  @media(min-width:$on-palm) {
+    border-left: 1px solid $gray70;
+    border-right: 1px solid $gray70;
+    background: $white;
+    box-shadow: 0 0 2px rgba(0,0,0,.2);
+  }
+}

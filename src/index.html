@@ -9,13 +9,63 @@ layout: default
   <form>
 
     <h2 class="page__subtitle">Champion</h2>
-    <select>
+    <select class="js-input">
       <option selected disabled>-- Please select --</option>
       <option> F.C. Juventus</option>
       <option>Real Madrid</option>
     </select>
 
     <h2>Group Stage</h2>
+
+    <section class="match">
+      <time class="match__time" datetime="2016-09-13T20:45:00+02:00">Sep 13, 20:45 - Group F</time>
+      <div class="match__title--only-mobile">F.C. Bayern München - Olympique Lyonnais</div>
+      <div class="match__title">
+        <div class="match__home">
+
+          <div class="match__logo">
+            <img class="match__img" src="{{ site.url }}/assets/images/team-logos/logo--bayern.svg">
+          </div>
+          <div class="match__team-name">F.C. Bayern München</div>
+
+        </div>
+
+        <div class="match__result">
+          <div class="match__goals">4 : 3</div>
+          <div class="match__score">Scored: 8.44 pts</div>
+        </div>
+
+        <div class="match__guest">
+
+          <div class="match__logo">
+            <img class="match__img" src="{{ site.url }}/assets/images/team-logos/logo--lyon.svg">
+          </div>
+          <div class="match__team-name">Olympique Lyonnais</div>
+
+        </div>
+      </div>
+
+      <div class="match__bet">
+
+        <input id="r1" class="js-input match__radio" type="radio" name="m1" value="1" checked disabled>
+        <label class="match__label match__label--50" for="r1">Home<br>4.22</label>
+
+        <input id="r2" class="js-input match__radio" type="radio" name="m1" value="X" disabled>
+        <label class="match__label match__label--10" for="r2">Draw<br>8.21</label>
+
+        <input id="r3" class="js-input match__radio" type="radio" name="m1" value="2" disabled>
+        <label class="match__label match__label--10" for="r3">Away<br>3.30</label>
+
+      </div>
+
+      <div class="match__superbet">
+
+        <input id="c1" class="js-input match__checkbox" type="checkbox" disabled checked>
+        <label class="match__label" for="c1">Super bet <span class="match__superbets-left">&nbsp;(4 left)</span></label>
+
+      </div>
+
+    </section>
 
     <section class="match">
       <time class="match__time" datetime="2016-09-13T20:45:00+02:00">Sep 13, 20:45 - Group F</time>
@@ -31,8 +81,8 @@ layout: default
         </div>
 
         <div class="match__result">
-          <div class="match__goals">3 : 3</div>
-          <div class="match__score">Scored: 8.43 pts</div>
+          <div class="match__goals">- : -</div>
+          <div class="match__score"></div>
         </div>
 
         <div class="match__guest">
@@ -43,7 +93,31 @@ layout: default
           <div class="match__team-name">F.C. Juventus</div>
 
         </div>
+      </div>
+
+      <div class="match__bet">
+
+        <input id="r4" class="js-input match__radio" type="radio" name="m2" value="1">
+        <label class="match__label match__label--50" for="r4">Home</label>
+
+        <input id="r5" class="js-input match__radio" type="radio" name="m2" value="X">
+        <label class="match__label match__label--10" for="r5">Draw</label>
+
+        <input id="r6" class="js-input match__radio" type="radio" name="m2" value="2">
+        <label class="match__label match__label--10" for="r6">Away</label>
+
+      </div>
+
+      <div class="match__superbet">
+
+        <input id="c2" class="js-input match__checkbox" type="checkbox">
+        <label class="match__label" for="c2">Super bet <span class="match__superbets-left">&nbsp;(4 left)</span></label>
+
+      </div>
+
     </section>
+
+    <input class="btn--save" type="submit" value="save">
   </form>
 
 </main>
