@@ -2,21 +2,48 @@
 layout: default
 ---
 
-<div class="home">
+<main class="page page--matches">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page__title">Matches</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <form>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    <h2 class="page__subtitle">Champion</h2>
+    <select>
+      <option selected disabled>-- Please select --</option>
+      <option> F.C. Juventus</option>
+      <option>Real Madrid</option>
+    </select>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-</div>
+    <h2>Group Stage</h2>
+
+    <section class="match">
+      <time class="match__time" datetime="2016-09-13T20:45:00+02:00">Sep 13, 20:45 - Group F</time>
+      <div class="match__title--only-mobile">Real Madrid - F.C. Juventus</div>
+      <div class="match__title">
+        <div class="match__home">
+
+          <div class="match__logo">
+            <img class="match__img" src="{{ site.url }}/assets/images/team-logos/logo--real.svg">
+          </div>
+          <div class="match__team-name">Real Madrid</div>
+
+        </div>
+
+        <div class="match__result">
+          <div class="match__goals">3 : 3</div>
+          <div class="match__score">Scored: 8.43 pts</div>
+        </div>
+
+        <div class="match__guest">
+
+          <div class="match__logo">
+            <img class="match__img" src="{{ site.url }}/assets/images/team-logos/logo--juve.svg">
+          </div>
+          <div class="match__team-name">F.C. Juventus</div>
+
+        </div>
+    </section>
+  </form>
+
+</main>
