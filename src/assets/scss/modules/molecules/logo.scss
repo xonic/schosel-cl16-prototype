@@ -1,0 +1,31 @@
+.logo {
+
+  &:hover,
+  &:active {
+    color: $text-color;
+    text-decoration: none;
+  }
+}
+
+.logo__img {
+  float: left;
+  margin-right: $space30;
+}
+
+.logo__title,
+.logo__subtitle {
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+
+.logo__title {
+  font-size: $font50;
+  font-weight: $bold-font-weight;
+  color: $text-color;
+}
+
+.logo__subtitle {
+  font-size: $font30;
+  white-space: nowrap;
+  color: $gray40;
+}

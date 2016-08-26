@@ -5,4 +5,7 @@ The main SCSS file for everything, yep
 @import "main";
 @import "base";
 @import "layout";
-@import "syntax-highlighting";
+
+@import "modules/molecules/logo";
+@import "modules/molecules/nav";
+@import "modules/organisms/header";

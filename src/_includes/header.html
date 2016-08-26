@@ -1,9 +1,33 @@
 <header class="header">
 
-  <div class="logo--schosel">
-    <img src="{{ site.url }}/assets/images/logo--cl.svg" alt="Champions League Logo">
-    <h1 class="logo--schosel__title">Schosel</h1>
-    <h2 class="logo--schosel__subtitle">Champions League Edition</h2>
+  <a class="logo" href="{{ site.url }}">
+    <img class="logo__img" src="{{ site.url }}/assets/images/logo--cl.svg" alt="Champions League Logo">
+    <h1 class="logo__title">Schosel</h1>
+    <h2 class="logo__subtitle">Champions League Edition</h2>
+  </a>
+
+  <nav class="nav nav--primary">
+    <ul class="nav--primary__items">
+      <li class="nav--primary__item"><a class="nav--primary__link">Matches</a></li>
+      <li class="nav--primary__item"><a class="nav--primary__link">Ranking</a></li>
+      <li class="nav--primary__item"><a class="nav--primary__link">Stats</a></li>
+      <li class="nav--primary__item"><a class="nav--primary__link">Chat</a></li>
+      <li class="nav--primary__item"><a class="nav--primary__link">Rules</a></li>
+    </ul>
+  </nav>
+
+  <nav class="nav nav--secondary">
+    <input id="nav--secondary__toggle" class="nav--secondary__toggle" type="checkbox">
+    <label class="nav--secondary__label" for="nav--secondary__toggle">Tom N. &#9662;</label>
+    <ul class="nav--secondary__items">
+      <li class="nav--secondary__item"><a class="nav--secondary__link">My Account</a></li>
+      <li class="nav--secondary__item"><a class="nav--secondary__link">Logout</a></li>
+    </ul>
+  </nav>
+
+  <div class="user-stats">
+    <div class="user-stats__pts">68.43 pts</div>
+    <div class="user-stats__rank">Ranked 12 of 23</div>
   </div>
 
 </header>
