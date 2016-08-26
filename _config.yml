@@ -2,7 +2,8 @@
 # Can be used in your theme by calling 'site.title' and so on
 title: schosel-cl16
 description: Penis
-url: http://schosel.net
+# url: http://schosel.net
+url: http://localhost:3000
 
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
 source: .tmp/src
@@ -16,7 +17,7 @@ author:
   name: Tom
   email: tom@naegele.it
   uri: xon1c.com
-  bio: 
+  bio:
   twitter:
   github:
 
@@ -42,6 +43,13 @@ redcarpet:
               'strikethrough', 'superscript', 'underline', 'highlight', 'footnotes']
 highlighter: true
 
+# Autoprefixer
+assets:
+  autoprefixer:
+    browsers:
+      - "last 2 versions"
+      - "IE > 9"
+
 # Extending Jekyll
 gems:
   - jekyll-feed
@@ -49,3 +57,5 @@ gems:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-assets
+  - autoprefixer-rails
