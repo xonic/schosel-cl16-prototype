@@ -24,19 +24,162 @@
 
 .match__title {
   display:flex;
-  justify-content: space-around;
   margin-bottom: $space40;
   text-align: center;
+
+  > * {
+    flex: 1 0 0;
+    width:33%;
+  }
 }
 
 .match__logo {
-  padding: $space10;
+  position: relative;
+  margin: 0 auto;
   width: 72px;
   height: 72px;
-  background: $white;
   border: 2px solid $gray10;
   border-radius: 50%;
   box-shadow: 0 2px 4px rgba(0,0,0,.5);
+
+  &:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../images/logo--all-teams.svg) top left no-repeat;
+    background-size: 400% 800%;
+  }
+}
+
+.logo--atletico:before {
+  background-position: 33.33% 0;
+}
+
+.logo--barcelona:before {
+  background-position: 66.67% 0;
+}
+
+.logo--basel:before {
+  background-position: 100% 0;
+}
+
+.logo--bayern:before {
+  background-position: 0% 14.29%;
+}
+
+.logo--benfica:before {
+  background-position: 33.33% 14.29%;
+}
+
+.logo--besiktas:before {
+  background-position: 66.67% 14.29%;
+}
+
+.logo--brugge:before {
+  background-position: 100% 14.29%;
+}
+
+.logo--celtic:before {
+  background-position: 0% 28.57%;
+}
+
+.logo--dinamo:before {
+  background-position: 33.33% 28.57%;
+}
+
+.logo--dortmund:before {
+  background-position: 66.67% 28.57%;
+}
+
+.logo--juve:before {
+  background-position: 100% 28.57%;
+}
+
+.logo--kiev:before {
+  background-position: 0% 42.86%;
+}
+
+.logo--kobenhavn:before {
+  background-position: 33.33% 42.86%;
+}
+
+.logo--legia:before {
+  background-position: 66.67% 42.86%;
+}
+
+.logo--leicester:before {
+  background-position: 100% 42.86%;
+}
+
+.logo--leverkusen:before {
+  background-position: 0% 57.12%;
+}
+
+.logo--ludogorets:before {
+  background-position: 33.33% 57.12%;
+}
+
+.logo--lyon:before {
+  background-position: 66.67% 57.12%;
+}
+
+.logo--manchester:before {
+  background-position: 100% 57.12%;
+}
+
+.logo--moenchengladbach:before {
+  background-position: 0% 71.43%;
+}
+
+.logo--monaco:before {
+  background-position: 33.33% 71.43%;
+}
+
+.logo--moskau:before {
+  background-position: 66.67% 71.43%;
+}
+
+.logo--napoli:before {
+  background-position: 100% 71.43%;
+}
+
+.logo--paris:before {
+  background-position: 0% 85.71%;
+}
+
+.logo--porto:before {
+  background-position: 33.33% 85.71%;
+}
+
+.logo--psv:before {
+  background-position: 66.67% 85.71%;
+}
+
+.logo--real:before {
+  background-position: 100% 85.71%;
+}
+
+.logo--rostov:before {
+  background-position: 0% 100%;
+}
+
+.logo--sevilla:before {
+  background-position: 33.33% 100%;
+}
+
+.logo--sporting:before {
+  background-position: 66.67% 100%;
+}
+
+.logo--tottenham:before {
+  background-position: 100% 100%;
+}
+
+.match__team {
+  text-align: center;
 }
 
 .match__img {
