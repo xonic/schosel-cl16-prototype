@@ -7,6 +7,7 @@ The main SCSS file for everything, yep
 @import "layout";
 
 @import "modules/atoms/btn";
+@import "modules/atoms/table";
 
 @import "modules/molecules/logo";
 @import "modules/molecules/nav";
@@ -14,3 +15,4 @@ The main SCSS file for everything, yep
 @import "modules/organisms/page";
 @import "modules/organisms/header";
 @import "modules/organisms/match";
+@import "modules/organisms/ranking";
