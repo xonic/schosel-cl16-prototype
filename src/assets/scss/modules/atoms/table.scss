@@ -17,6 +17,10 @@
   &:nth-child(odd) {
     background: lighten($gray70, 3%);
   }
+
+  &:hover {
+    background: lighten($primary-color, 40%);
+  }
 }
 
 .table__th,
