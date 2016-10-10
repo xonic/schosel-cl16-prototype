@@ -1,0 +1,26 @@
+.chat {
+  display: flex;
+  flex-direction: column;
+
+  > * {
+    flex: 1;
+  }
+}
+
+.chat__msg,
+.chat__input {
+  display: block;
+  width: 100%;
+}
+
+.chat__msg {
+
+  &[disabled] {
+    border-color: $gray60;
+    color: $text-color;
+  }
+}
+
+.chat__input {
+  margin-bottom: 0;
+}

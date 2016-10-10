@@ -8,9 +8,11 @@ The main SCSS file for everything, yep
 
 @import "modules/atoms/btn";
 @import "modules/atoms/table";
+@import "modules/atoms/forms";
 
 @import "modules/molecules/logo";
 @import "modules/molecules/nav";
+@import "modules/molecules/chat";
 
 @import "modules/organisms/page";
 @import "modules/organisms/header";
